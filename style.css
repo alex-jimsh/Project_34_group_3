@@ -1,0 +1,139 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #0a0a0a;
+    overflow-x: hidden;
+}
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #121212;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    color: #ff0000;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #ff0000;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+.hero-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(45deg, #1f1f1f, #121212);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero-section h1 {
+    font-size: 64px;
+    color: #ff0000;
+    text-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000;
+    letter-spacing: 5px;
+}
+
+.slogan {
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+    margin-top: 20px;
+}
+
+/* Project Showcase */
+.project-showcase {
+    padding: 60px 40px;
+    background-color: #0d0d0d;
+    color: #fff;
+    text-align: center;
+}
+
+.project-showcase h2 {
+    font-size: 48px;
+    color: #ff0000;
+    text-shadow: 0 0 15px #ff0000;
+    margin-bottom: 40px;
+}
+.project-card-link {
+    text-decoration: none; /* REMOVE VERY VERY GOFFY UNDERLINE FUCKING HATE IT */
+    color: inherit; /* INHERIT COLOR (COPY) FROM PREVISOUSLY */
+}
+
+.project-card {
+    background-color: #1f1f1f;
+    padding: 30px;
+    margin: 20px 0;
+    border-left: 4px solid #ff0000;
+    transition: transform 0.3s, background 0.3s;
+    border-radius: 10px; /* ROUNDED corners more sicko cool mode -გავლილი გვაქ რო ამრგვალებს ეგაა*/
+    cursor: pointer; 
+}
+
+.project-card h3 {
+    font-size: 28px;
+    color: #ff0000;
+}
+
+.project-card:hover {
+    transform: translateX(-10px);
+    background-color: #2a2a2a;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    border-top: 1px solid #ff0000;
+}
+
+.footer p {
+    color: #ff0000;
+    font-size: 16px;
+}
