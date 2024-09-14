@@ -120,7 +120,7 @@ function showGameOver() {
     ctx.font = '36px Arial';
     ctx.fillText("YOU LOST", WIDTH / 2 - 100, HEIGHT / 2);
     ctx.font = '24px Arial';
-    ctx.fillText("TIME FOR PUNISHMENT", WIDTH / 2 - 150, HEIGHT / 2 + 50);
+    ctx.fillText("TIME FOR YOUR PUNISHMENT", WIDTH / 2 - 150, HEIGHT / 2 + 50);
 }
 
 // controls so you dont have to use telecines to move god damn cube
